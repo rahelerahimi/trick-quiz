@@ -1,0 +1,142 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: blueviolet;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 120vh;
+            }
+            
+            body>div:nth-of-type(1) {
+                width: 550px;
+                height: 600px;
+                position: relative;
+                border-radius: 10px;
+                box-shadow: 0 0 3px 3px rgb(118, 31, 153);
+            }
+            
+            body>div:nth-of-type(1)>h2 {
+                height: 80px;
+                border-bottom: 1px solid rgb(118, 31, 153);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                color: white
+            }
+            
+            h3 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-align: center;
+                font-size: 1em;
+            }
+            
+            body>div:nth-of-type(1)>div:nth-of-type(2),
+            body>div:nth-of-type(1)>div:nth-of-type(3),
+            body>div:nth-of-type(1)>div:nth-of-type(4),
+            body>div:nth-of-type(1)>div:nth-of-type(5) {
+                display: none;
+            }
+            
+            body>div:nth-of-type(1)>div:nth-of-type(1),
+            body>div:nth-of-type(1)>div:nth-of-type(2),
+            body>div:nth-of-type(1)>div:nth-of-type(3),
+            body>div:nth-of-type(1)>div:nth-of-type(4),
+            body>div:nth-of-type(1)>div:nth-of-type(5) {
+                text-align: center;
+                color: white;
+                position: absolute;
+                top: 19%;
+                left: 25%;
+            }
+            
+            ul {
+                margin-top: 50px;
+                width: 300px;
+                transition: 1s;
+            }
+            
+            ul li {
+                list-style-type: none;
+                height: 60px;
+                background-color: rgba(0, 0, 0, 0.432);
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-top: 10px;
+                padding: 10px;
+            }
+            
+            ul li label {
+                padding: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+            
+            body>div:nth-of-type(2) {
+                display: flex;
+            }
+            
+            button {
+                width: 100px;
+                height: 45px;
+                border: none;
+                outline: none;
+                margin-top: 20px;
+                border-radius: 30px;
+                margin-left: 10px;
+            }
+            
+            #next {
+                background-color: rgb(217, 54, 190);
+                color: white;
+            }
+            
+            #prev {
+                background-color: rgb(248, 245, 22);
+            }
+            
+            #prev,
+            #submit {
+                display: none;
+            }
+            
+            .progress {
+                background-color: greenyellow;
+                height: 10px;
+                position: absolute;
+                left: 40px;
+                transition: 1s;
+                border-radius: 20px;
+                color: white;
+                line-height: 45px;
+                text-align: center;
+            }
+            
+            #like {
+                color: white;
+                font-size: 10em;
+                background-color: rgb(61, 202, 61);
+                border-radius: 50%;
+                padding: 12px;
+                width: 200px;
+                height: 200px;
+                transition: 1s;
+                transform: scale(0);
+                text-align: center;
+            }
+            
+            .background {
+                background-color: rgb(21, 179, 21);
+            }
